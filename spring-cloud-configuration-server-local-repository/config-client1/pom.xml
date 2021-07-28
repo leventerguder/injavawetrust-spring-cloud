@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.injavawetrust</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>config-client1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>config-client1</name>
     <description>Demo project for Spring Boot</description>
