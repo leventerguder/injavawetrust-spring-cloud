@@ -1,0 +1,10 @@
+
+example:
+  key1: config-client1-dev-value1
+  #key1: config-client1-dev-value1-new
+  key2: config-client1-dev-value2
+  key3: config-client1-dev-value3
+
+# The naming convention for the application configuration files are appname-env.properties or appname-env.yml.
+## To testing /actuator/refresh HTTP POST , change value.
+

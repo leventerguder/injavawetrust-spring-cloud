@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-client1
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8071
+
+## In a Spring Boot service that uses Spring Cloud Config, configuration information
+## can be set in one of these files :
+##  bootstrap.yml , bootstrap.properties , application.yml , application.properties
+
+
+
+

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/local-config-repository
+## We will use the filesystem/classpath for storing application configuration information,
+## we must tell the Spring Cloud Config Server to run with the native profile.
+
+## The classpath attribute causes Spring Cloud Config Server to look in the src/main/resources/local-config-repository
+server:
+  port: 8071
