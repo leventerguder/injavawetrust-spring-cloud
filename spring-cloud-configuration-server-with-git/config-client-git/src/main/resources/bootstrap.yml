@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: config-client-git
+  profiles:
+    active: uat
+  cloud:
+    config:
+      uri: http://localhost:8071

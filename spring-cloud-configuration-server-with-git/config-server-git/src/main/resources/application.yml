@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/leventerguder/injavawetrust-config-server-files.git
+          default-label: main
+          # https://stackoverflow.com/questions/67371256/caused-by-org-eclipse-jgit-api-errors-refnotfoundexception-ref-master-cannot-b
+          clone-on-start: true
+
+server:
+  port: 8071
+
+
+## The default implementation of an environment repository in Spring Cloud Config is the Git backend.
