@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-client-vault
+  profiles:
+    #active: dev
+    active: uat
+  cloud:
+    config:
+      uri: http://localhost:8071
+    vault:
+      token: s.TmH8SHJWnP8LWeIUTrvHOIKH
+      #Change the token "Root Token" on command line , vault server-dev
+      scheme: http
