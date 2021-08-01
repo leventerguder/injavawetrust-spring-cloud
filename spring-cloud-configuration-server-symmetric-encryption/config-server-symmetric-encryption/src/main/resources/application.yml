@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: config-server-symmetric-encryption
+  profiles:
+    active: git
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/leventerguder/injavawetrust-config-server-files.git
+          default-label: main
+          # https://stackoverflow.com/questions/67371256/caused-by-org-eclipse-jgit-api-errors-refnotfoundexception-ref-master-cannot-b
+          clone-on-start: true
+encrypt:
+  key: myCoolSecretKey
+  #key: myCoolSecretKey-invalid
+## Tells the Config Server to use this value as the symmetric key.
+
+## http://localhost:8071/config-client-symmetric-encryption/dev
+## The sample properties encrypt by myCoolSecretKey.
+## if you change the key for testing , the values are "<n/a>"
+
+server:
+  port: 8071

@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: config-client-symmetric-encryption
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8071
