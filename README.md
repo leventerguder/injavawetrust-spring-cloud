@@ -11,3 +11,7 @@
 - Spring Cloud Configuration Server with Vault Example
 
   https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-cloud-configuration-server-with-vault
+
+- Spring Cloud Configuration Server , Symmetric Encryption
+
+  https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-cloud-configuration-server-symmetric-encryption
