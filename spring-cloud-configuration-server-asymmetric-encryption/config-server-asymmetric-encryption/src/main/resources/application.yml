@@ -1,0 +1,24 @@
+
+spring:
+  application:
+    name: config-server-asymmetric-encryption
+  profiles:
+    active: git
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/leventerguder/injavawetrust-config-server-files.git
+          default-label: main
+          # https://stackoverflow.com/questions/67371256/caused-by-org-eclipse-jgit-api-errors-refnotfoundexception-ref-master-cannot-b
+          clone-on-start: true
+encrypt:
+  key-store:
+    location: classpath:/injavawetrustEncryptionKey.jks
+    password: a12345
+    alias: injavawetrustEncryptionKey
+
+server:
+  port: 8071
+
