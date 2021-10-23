@@ -12,3 +12,14 @@ spring:
           kvVersion: 2
 server:
   port: 8701
+
+# https://cloud.spring.io/spring-cloud-config/reference/html/#_version_control_backend_filesystem_use
+
+# Vault is a tool for securely accessing secrets. A secret is anything that to which you want to tightly control access,
+# such as API keys, passwords, certificates, and other sensitive information.
+# Vault provides a unified interface to any secret while providing tight access control and recording a detailed audit log.
+
+# To enable the config server to use a Vault backend, you can run your config server with the vault profile.
+# For example, in your config server’s application.properties, you can add spring.profiles.active=vault.
+
+# All configurable properties can be found in org.springframework.cloud.config.server.environment.VaultEnvironmentProperties.

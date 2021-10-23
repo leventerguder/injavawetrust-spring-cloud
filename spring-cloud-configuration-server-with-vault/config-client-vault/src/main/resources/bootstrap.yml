@@ -8,6 +8,6 @@ spring:
     config:
       uri: http://localhost:8071
     vault:
-      token: s.TmH8SHJWnP8LWeIUTrvHOIKH
+      token: s.Cxw5FtXPGGnVKHEqXsjHYNH8
       #Change the token "Root Token" on command line , vault server-dev
       scheme: http
