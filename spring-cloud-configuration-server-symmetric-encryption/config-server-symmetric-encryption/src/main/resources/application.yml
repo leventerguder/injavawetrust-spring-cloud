@@ -23,3 +23,16 @@ encrypt:
 
 server:
   port: 8071
+
+# https://github.com/leventerguder/injavawetrust-config-server-files/blob/main/config-client-asymmetric-encryption-dev.yml
+
+# example:
+#  key1: '{cipher}AQBYpoAOtWPU23fLgEEDtvSQhCEYwNzocc1GCbGBYuKTyFAJHd+H34Y51nshclmdiqcAFW+X5Rx19BjhulBUSobwLvqfCC7rUGaExClDAYGQb3ejALFFy7mBVZ5JV/qtTWaw3WfXlHOKms1uyhCfwEn2fjTDmISBdmBTV0lA5ruhsYqDZ2AcO9dmpPzsRMxoDQT/i9O/BZpo6rwnPz9LLs9KJeRB+o5bdY29Zcc1xmr/yChwu/028d0ZWObi1wFao+ja6CfD/cZ4G5KbGT2wZ+Oh5IOoXsYNcaPhUDTHaE5CiClMPt+I8hhV0tVWMIsILHsVh68QByW/jI9ZaIqhkKMmdEoZCRh3lYddOTo5PB7Ql8NZY+GyypNSU8OFvYgFtYjpI/RuI9+Q4KqTgiGw4hhs'
+#  key2: '{cipher}AQALAMiChkjbR/VVqWiCK9OTiBAqjq+D8M8Bv3jhmz0iUStzgprWaNUMsHf5wJI3KMapjr+Wuk/gLogu9Mn3DSo7oIYOtyX76lUlDOm0j8MBW3Pv5jFmxU4e41ZJpXqZl+QUOFB3pcTqjq/45i4TEnF1XIAXpW0szlCSs41fg0voLyBCiBiYzNpghq0uS4JVxl3+CVPq0u1Wn96d2LxBsqYmp42dqD8ofFAfbgjLQW/ClePce5yFSG1y/oVDHasQ5gld62J9FU4tg+xTT4IeL8hgFrykIvP7w5P5DL7Ygu75vAawAOwuZm54Mh7fEdRncuRxoqnAmaq7gfvEsafLdPsjMQZk12LetRcF1HTjAv8ZCk5i7Dy2Azn83rah9GjP16E6Ap9wOCZA+jZJpvmhEZ9b'
+#  key3: '{cipher}AQBrL63q817jvDeWZc28rQep/U/XwQG0RnZ/S23PA7vUZLip6B6OIegpaqlo/EIfwlv7b6WT7CYpGsCK8Fs9PHtCDh5zaGkBIk/OWBg8XC88+Jua1r3LYGXX8+DhTvxt9mYhAHIKxrtmzWM31ZAk8JTMo7OjQs/iROO/loYRchI4kShCkep6j42cvWZe4V4fTmmY3e/QnqHRpu1XnvZI8+vrqUBO2gbbqZCmcsG7M9R1BbnhuHkwQTS7Dkx9vww4pUSPYBEK4HndmQtkMbsw0yZZ8ZtcQgZ9p5AqZm3NURSKHcIg1c6zGG/clsO44dEBeww0jPqFkRwcHBr9SEJ4EWn84qo1pRwGdeHtBz4PnZRm3v+IbdxmeTaoW+y7p3KTQYl4r22x4w/80gG4bcEczE1T'
+
+# If the remote property sources contain encrypted content (values starting with {cipher}), they are decrypted before sending to clients over HTTP.
+# If a value cannot be decrypted, it is removed from the property source and an additional property is added with the same key but prefixed with invalid and a value that means “not applicable” (usually <n/a>).
+
+# The server also exposes /encrypt and /decrypt endpoints (on the assumption that these are secured and only accessed by authorized agents).
+
