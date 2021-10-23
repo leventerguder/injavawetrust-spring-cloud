@@ -1,6 +1,7 @@
 spring:
   application:
     name: config-server
+    # By default, if no application name is set, application will be used.
   profiles:
     active: native
   cloud:
@@ -14,3 +15,6 @@ spring:
 ## The classpath attribute causes Spring Cloud Config Server to look in the src/main/resources/local-config-repository
 server:
   port: 8071
+
+# Using the local filesystem for your git repository is intended for testing only.
+# You should use a server to host your configuration repositories in production.
