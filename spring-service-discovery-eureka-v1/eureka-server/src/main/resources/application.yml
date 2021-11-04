@@ -1,0 +1,14 @@
+eureka:
+  client:
+    fetch-registry: false # When set to false, tells the Eureka service that as it starts, it doesn?t need to cache its registry information locally.
+    register-with-eureka: false # Tells the Config Server not to register with Eureka when the Spring Boot Eureka application starts.
+  instance:
+    hostname: localhost # Sets Eureka instance hostname for the Eureka service
+    prefer-ip-address: true
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 8761
+  servlet:
+    context-path: /eureka-server
