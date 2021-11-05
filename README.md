@@ -21,3 +21,9 @@
 - Spring Cloud Configuration Server , Asymmetric Encryption
 
   https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-cloud-configuration-server-asymmetric-encryption
+
+## Service Discovery Examples
+
+- Eureka Server Basic Example
+
+  https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-service-discovery-eureka-v1
