@@ -29,7 +29,9 @@
   https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-service-discovery-eureka-v1
   
 - Service Discovery Client
+  
   https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-service-discovery-eureka-discovery-client
   
 - Service Discovery Client - @LoadBalanced enabled RestTemplate
+
   https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-service-discovery-eureka-discovery-client-enabled-resttemplate  
