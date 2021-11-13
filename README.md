@@ -35,3 +35,7 @@
 - Service Discovery Client - @LoadBalanced enabled RestTemplate
 
   https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-service-discovery-eureka-discovery-client-enabled-resttemplate  
+  
+- Service Discovery Client - Feign Client
+
+  https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-service-discovery-eureka-feign-client
