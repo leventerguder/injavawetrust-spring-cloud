@@ -36,3 +36,7 @@ server:
 
 # The server also exposes /encrypt and /decrypt endpoints (on the assumption that these are secured and only accessed by authorized agents).
 
+# https://cloud.spring.io/spring-cloud-config/reference/html/#_key_management
+# The Config Server can use a symmetric (shared) key or an asymmetric one (RSA key pair).
+# The asymmetric choice is superior in terms of security, but it is often more convenient to use a symmetric key since it is a single property value to configure in the bootstrap.properties.
+# To configure a symmetric key, you need to set encrypt.key to a secret String (or use the ENCRYPT_KEY environment variable to keep it out of plain-text configuration files).

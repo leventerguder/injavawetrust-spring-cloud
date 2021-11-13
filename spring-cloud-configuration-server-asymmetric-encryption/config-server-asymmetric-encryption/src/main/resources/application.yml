@@ -1,4 +1,3 @@
-
 spring:
   application:
     name: config-server-asymmetric-encryption
@@ -22,3 +21,25 @@ encrypt:
 server:
   port: 8071
 
+# To configure an asymmetric key use a keystore (e.g. as created by the keytool utility that comes with the JDK). The keystore properties are encrypt.keyStore.* with * equal to
+
+#  encrypt.keyStore.location   Contains a Resource location
+#  encrypt.keyStore.password   Holds the password that unlocks the keystore
+#  encrypt.keyStore.alias      Identifies which key in the store to use
+#  encrypt.keyStore.type       The type of KeyStore to create. Defaults to jks.
+
+
+# To create a keystore for testing, you can use a command resembling the following:
+
+#  keytool -genkeypair -alias mytestkey -keyalg RSA \
+#  -dname "CN=Web Server,OU=Unit,O=Organization,L=City,S=State,C=US" \
+#  -keypass changeme -keystore server.jks -storepass letmein
+
+# Put the server.jks file in the classpath (for instance) and then, in your bootstrap.yml, for the Config Server, create the following settings:
+
+#encrypt:
+#  keyStore:
+#    location: classpath:/server.jks
+#    password: letmein
+#    alias: mytestkey
+#    secret: changeme
