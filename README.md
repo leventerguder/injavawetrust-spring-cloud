@@ -39,3 +39,6 @@
 - Service Discovery - Feign Client
 
   https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-service-discovery-eureka-feign-client
+
+## Spring Cloud Resilience4j
+  https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-cloud-starter-circuitbreaker-resilience4j-v1
