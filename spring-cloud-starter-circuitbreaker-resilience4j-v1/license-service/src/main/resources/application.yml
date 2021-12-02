@@ -1,0 +1,19 @@
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      registerHealthIndicator: true
+      slidingWindowType: COUNT_BASED ##default
+      slidingWindowSize: 10
+      minimumNumberOfCalls: 5
+      waitDurationInOpenState: 10s
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    circuitbreakerevents:
+      enabled: true
+
