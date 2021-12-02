@@ -41,4 +41,7 @@
   https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-service-discovery-eureka-feign-client
 
 ## Spring Cloud Resilience4j
+
+- Resilience4j Basic Example
+
   https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-cloud-starter-circuitbreaker-resilience4j-v1
