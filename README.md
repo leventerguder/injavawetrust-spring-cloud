@@ -45,3 +45,8 @@
 - Resilience4j Basic Example
 
   https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-cloud-starter-circuitbreaker-resilience4j-v1
+  
+- Resilience4j Basic Example - v2
+
+  https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-cloud-starter-circuitbreaker-resilience4j-v2
+  
