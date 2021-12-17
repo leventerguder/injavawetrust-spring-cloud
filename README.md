@@ -42,15 +42,18 @@
 
 ## Spring Cloud Resilience4j
 
-- Resilience4j Basic Example - v1
+- Resilience4j Circuit Breaker Basic Example - v1
 
   https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-cloud-starter-circuitbreaker-resilience4j-v1
   
-- Resilience4j Basic Example - v2
+- Resilience4j Circuit Breaker Basic Example - v2
 
   https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-cloud-starter-circuitbreaker-resilience4j-v2
   
-- Resilience4j Basic Example - v3
+- Resilience4j Circuit Breaker Basic Example - v3
 
   https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-cloud-starter-circuitbreaker-resilience4j-v3 
   
+- Resilience4j Circuit Breaker fallbackMethod
+
+  https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-cloud-starter-circuitbreaker-resilience4j-fallback
