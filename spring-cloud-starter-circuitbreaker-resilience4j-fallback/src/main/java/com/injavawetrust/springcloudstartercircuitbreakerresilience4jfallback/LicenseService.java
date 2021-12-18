@@ -27,8 +27,14 @@ public class LicenseService {
      With the same signature , we can pass all the parameters from the original method to the fallback method.
      */
 
+    /*
+    Regarding application.yml configuration , this method will be executed 5 times, after all 5 request the fallbackMethod will be invoked
+    Than , the fallbackMethod will be invoked ONLY. (Circuit will be opened)
+     */
+
     @CircuitBreaker(name = "license-service-circuit-breaker", fallbackMethod = "buildFallbackLicenseList")
     public License getLicense(String license, String organization) {
+        System.out.println("LicenseService#called");
         throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR, "This is a remote exception");
     }
 
