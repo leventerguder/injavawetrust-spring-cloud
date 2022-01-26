@@ -1,0 +1,12 @@
+resilience4j.bulkhead:
+  configs:
+    default:
+      maxConcurrentCalls: 2 # The maximum number of concurrent calls
+      maxWaitDuration: 10ms # The maximum amount of time to block a thread
+# With the semaphore approach, sets maxConcurrentCalls and maxWaitDuration
+  instances:
+    license-service-bulkhead:
+      baseConfig: default
+
+# maxWaitDuration —  Sets the maximum amount of time to block a thread when entering a bulkhead. The default value is 0.
+# maxConcurrentCalls —Sets the maximum number of concurrent calls allowed by the bulkhead. The default value is 25.
