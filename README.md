@@ -57,3 +57,8 @@
 - Resilience4j Circuit Breaker fallbackMethod
 
   https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-cloud-starter-circuitbreaker-resilience4j-fallback
+  
+- Resilience4j Bulkhead fallbackMethod
+
+  https://github.com/leventerguder/injavawetrust-spring-cloud/tree/master/spring-cloud-starter-bulkhead-resilience4j-v1
+  
